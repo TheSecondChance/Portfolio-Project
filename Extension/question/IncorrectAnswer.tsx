@@ -5,12 +5,11 @@ const IncorrectAnswer = () => {
     color: #fff;
     text-align: center;
     margin-top: 30%;
-    // margin-bottom: 50%;
   `;
   const P = styled.p`
     color: #fff;
     text-align: center;
-    margin-bottom: 50%;
+    margin-bottom: 20%;
   `;
   return (
     <>
