@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Hassle-free Reminder",
+  "version": "1.0",
+  "description": "A simple Chrome extension that delivers random programming quiz questions at customizable intervals to help you stay sharp.",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["alarms", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "default_icon": {
+    "16": "icons/icon-48.png"
+  }
+}
