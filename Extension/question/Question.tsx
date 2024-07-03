@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { RandomCategoryResponse } from "./FethcShap";
+import { RandomCategoryResponse } from "./FetchShape";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import styles from "./Custom.module.css";
