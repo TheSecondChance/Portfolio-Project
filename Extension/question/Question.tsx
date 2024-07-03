@@ -84,7 +84,9 @@ export function Question() {
     <>
       <div style={{ width: "20rem", height: "20rem" }}>
         <div className={styles.cardBody}>
-          <h2>Hassel-Free Reminder</h2>
+          <h2>
+            Hassel-Free <span className={styles.headColor}>Reminder</span>
+          </h2>
           <hr />
           <p className={[styles.question, "card-text"].join(" ")}>
             {random?.random_category.random_question.question} ❓
