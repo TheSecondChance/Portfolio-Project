@@ -1,0 +1,86 @@
+.categoryColor {
+  color: rgb(255, 255, 255);
+}
+
+.btnHover:hover {
+  background-color: #845ec2;
+  border-color: #fff;
+  color: #fff;
+}
+
+.btnColor {
+  background-color: #0da9ff;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 3px;
+  margin-top: 30px;
+}
+
+.cardBody {
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  margin: 10px;
+}
+
+.btnInterval {
+  display: inline;
+  margin-bottom: 20px;
+}
+
+.headerFont {
+  text-align: center;
+  color: rgb(255, 255, 254);
+}
+
+.headColor {
+  color: #daff06;
+}
+
+.fspace {
+  display: inline;
+}
+
+.leftPadding {
+  padding-left: 20px;
+}
+
+.btnCenter {
+  margin-top: -15px;
+  text-align: center;
+}
+
+.interval {
+  padding-top: 20px;
+}
+
+.closeColor {
+  padding: 4px;
+  margin: 25;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(45deg, #7e47b9, #2575fc);
+  border: 2575fc solid;
+  border-radius: 2px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.btnSpace {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* question section */
+.question {
+  margin-top: 30px;
+  background-color: rgb(40, 4, 158);
+  padding: 4px;
+}
+
+.questioLeft {
+  margin-left: 20px;
+}
+/* rgb(32, 2, 2) */
+
+/* i like tis colors
+  color: rgb(55, 255, 0);
+  background-color: #65175c; */
