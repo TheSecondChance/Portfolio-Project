@@ -16,7 +16,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
       url: "./question/question.html",
       type: "popup",
       width: 600,
-      height: 310,
+      height: 400,
     });
     createAlarm();
   }
