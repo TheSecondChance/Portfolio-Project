@@ -4,7 +4,7 @@ const Loading = () => {
   const Header = styled.h4`
     color: #fff;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 22%;
   `;
   const P = styled.p`
     padding: 4px;
@@ -14,7 +14,7 @@ const Loading = () => {
     border-radius: 2px;
     opacity: 0.8;
     text-align: center;
-    margin-bottom: 20%;
+    margin-bottom: 30%;
   `;
   return (
     <>
