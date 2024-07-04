@@ -4,12 +4,12 @@ const IncorrectAnswer = () => {
   const Header = styled.h4`
     color: #fff;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 22%;
   `;
   const P = styled.p`
     color: #fff;
     text-align: center;
-    margin-bottom: 20%;
+    margin-bottom: 30%;
   `;
   return (
     <>
