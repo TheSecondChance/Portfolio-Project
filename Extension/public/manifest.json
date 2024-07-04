@@ -11,7 +11,7 @@
     "service_worker": "background.js"
   },
   "host_permissions": ["http://*/*", "https://*/*"],
-  "default_icon": {
-    "16": "icons/icon-48.png"
+  "icons": {
+    "48": "icons/icon-48.png"
   }
 }
