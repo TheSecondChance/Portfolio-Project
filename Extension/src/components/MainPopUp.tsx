@@ -89,7 +89,6 @@ const MainPopUp = () => {
           }
         )
         .then(() => {
-          console.log("User categories updated successfully.");
           setSelected("Aded👍");
         })
         .catch((err) => {
