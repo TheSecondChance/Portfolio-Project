@@ -5,6 +5,8 @@ import axios from "axios";
 import styles from "./Custom.module.css";
 import CorrectAnswer from "./CorrectAnswer";
 import IncorrectAnswer from "./IncorrectAnswer";
+import Loading from "./Loading";
+import NetworkError from "./NetworkError";
 
 const FormSchema = z.object({
   items: z.array(z.number()).refine((value) => value.length > 0, {
@@ -14,13 +16,13 @@ const FormSchema = z.object({
 
 export function Question() {
   const [random, setRandom] = useState<RandomCategoryResponse | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<React.ReactNode>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [submissionMessage, setSubmissionMessage] =
     useState<React.ReactNode>(null);
   const [selectedItems, setSelectedItems] = useState<number[]>([]);
   const [validationError, setValidationError] = useState<string | null>(null);
-
+  const networkError = <NetworkError />;
   useEffect(() => {
     axios
       .get<RandomCategoryResponse>("http://127.0.0.1:8000/random-category")
@@ -29,7 +31,7 @@ export function Question() {
         setLoading(false);
       })
       .catch((err) => {
-        setError(err.message);
+        setError(networkError);
         setLoading(false);
       });
   }, []);
@@ -69,11 +71,11 @@ export function Question() {
   };
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return <div>{error}</div>;
   }
 
   if (submissionMessage) {
