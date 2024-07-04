@@ -84,7 +84,7 @@ export function Question() {
 
   return (
     <>
-      <div style={{ width: "20rem", height: "20rem" }}>
+      <div style={{ width: "36rem", height: "22rem" }}>
         <div className={styles.cardBody}>
           <h2>
             Hassel-Free <span className={styles.headColor}>Reminder</span>
