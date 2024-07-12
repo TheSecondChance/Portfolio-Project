@@ -74,3 +74,5 @@ Click "Load unpacked" and select the Extension/build directory
 ## Access Backend:
 
 Navigate to http://127.0.0.1:8000 to access the Django backend
+
+mesakmegerem@gmail.com
